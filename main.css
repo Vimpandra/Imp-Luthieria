@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linktree {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.links {
+    box-shadow: 0.2em 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
