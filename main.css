@@ -3,53 +3,64 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: #fff;
     color: #333;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px 20px;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+.logo {
     color: #222;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: -0.5px;
+    background-color: #ee992a;
+    width: 100%;
+}
+
+.logo svg {
+    height: 8rem;
+    width: auto;
+    fill: #222;
 }
 
 .bio {
     padding: 0;
-    margin-bottom: 50px;
     text-align: center;
     font-size: 1.1rem;
     color: #444;
 }
 
 .bio p {
-    margin: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
+}
+
+.bio .ola {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .linktree {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .links {
-    background-color: #f7f7f7;
+    background-color: #ee992a;
     color: #333;
-    padding: 16px;
+    padding: 1rem 4rem;
     border-radius: 6px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 800;
     transition: background-color 0.2s ease;
 }
 
 .links:hover {
-    background-color: #eee;
+    background-color: #f8cb8f;
 }
 
 .links p {
@@ -59,21 +70,4 @@ h1 {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-/* Simple responsive adjustments */
-@media (max-width: 480px) {
-    body {
-        padding: 30px 15px;
-    }
-    
-    h1 {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
-    }
-    
-    .bio {
-        font-size: 1rem;
-        margin-bottom: 40px;
-    }
 }
